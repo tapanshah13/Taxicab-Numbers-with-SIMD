@@ -21,18 +21,16 @@ The `taxicab_problem.cpp` file includes implementations of two main functions de
 - The same process is repeated using `printTaxicabSimd(N)` to demonstrate the potential speed improvement with SIMD.
 - Finally, it displays a comparison table of execution times for both methods, highlighting the performance benefits of using SIMD.
 
-### Performance Measurement
-
-- The execution times for both the standard and SIMD-accelerated methods are measured and compared to demonstrate the efficiency gains possible with SIMD optimizations.
-
-## Prerequisites
-
-- A modern C++ compiler that supports C++11 standards and above.
-- AVX2 support in the CPU and compiler for the SIMD-accelerated function.
-
 ## Compilation
 
 To compile the `taxicab_problem.cpp` file with SIMD optimizations, use the following command. Ensure your compiler supports the AVX2 instruction set:
 
 ```bash
 g++ -O3 -mavx2 -o taxicab_numbers taxicab_problem.cpp
+```
+
+### Performance Measurement
+
+- The execution times for both the standard and SIMD-accelerated methods are measured and compared to demonstrate the efficiency gains possible with SIMD optimizations.
+
+
